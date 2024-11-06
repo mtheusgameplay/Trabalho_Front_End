@@ -11,9 +11,9 @@ function adicionarParagrafo() {
 }
 
 // Remove o último parágrafo, se houver mais de um
-function removeParagrafo() {
+function removerParagrafo() {
 const paragrafos = document.querySelectorAll("p");
-if (paragrafos.length > 1) {
+if (paragrafos.length > 1){
     paragrafos[paragrafos.length - 1].remove();
 } else {
     alert("Não há mais parágrafos para remover😢 !!");
@@ -28,7 +28,7 @@ function mudarCorFundo() {
 }
 
 // Muda a cor do texto do parágrafo inicial para uma cor aleatória
-function mudaCorTexto() {
+function mudarCorTexto() {
     const cores = ["#FF5733", "#33FF57", "#3357FF", "#FF33A6", "#FFC133"];
     document.getElementById("text").style.color = cores[Math.floor(Math.random() * cores.length)];
 }
