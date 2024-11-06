@@ -11,7 +11,7 @@ function adicionarParagrafo() {
 }
 
 // Remove o último parágrafo, se houver mais de um
-function removeparagrafo() {
+function removeParagrafo() {
 const paragrafos = document.querySelectorAll("p");
 if (paragrafos.length > 1) {
     paragrafos[paragrafos.length - 1].remove();
